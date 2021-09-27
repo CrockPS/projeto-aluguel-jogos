@@ -1,0 +1,24 @@
+#produto{
+    width: 400px;
+    height: 80%;
+    text-align: center;
+}
+
+#product-name{
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.alterar{
+    background-color: rgba(2, 217, 255, 0.01);
+    font-size: 20px;
+}
+
+#div-button{
+    display: flex;
+    justify-content: center; 
+}
+
+#p-alt{
+    font-size: 18px;
+}
