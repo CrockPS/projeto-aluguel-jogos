@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Components/Header';
 import Inicio from './Components/Inicio';
 import Content from './Components/Content';
@@ -18,20 +18,31 @@ import damaXadrez from "./Components/images/damaXadrez.png";
 import './App.css';
 
 export default function App () {
+
+    let [pedidos, setPedidos] = useState(0);
+
+    function handleAdd(){
+        setPedidos(pedidos++);
+    }
+    function handleRemove(){
+        setPedidos(pedidos--);
+    }
+
+    console.log(pedidos);
     return (
     <>
-        <Header />
+        <Header pedidos={pedidos}/>
         <Inicio />
-        <Content categoria="op1" section="Jogos de cartas" img1={uno} name1='Uno Tradicional' 
+        <Content  btnAdd={handleAdd} btnRemove={handleRemove} categoria="op1" section="Jogos de cartas" img1={uno} name1='Uno Tradicional' 
         img2={unoFlip} name2='Uno Flip' img3={baralho} name3='Baralho de cartas' />
         
-        <Content categoria="op2" section="Jogos de estratégia" img1={war} name1='Jogo War' 
+        <Content btnAdd={handleAdd} btnRemove={handleRemove} categoria="op2" section="Jogos de estratégia" img1={war} name1='Jogo War' 
         img2={BatalhaNaval} name2='Batalha Naval' img3={detetive} name3='Detetive' />
 
-        <Content categoria="op3" section="Diversão com a família" img1={banco} name1='Banco Imobiliário' 
+        <Content btnAdd={handleAdd} btnRemove={handleRemove} categoria="op3" section="Diversão com a família" img1={banco} name1='Banco Imobiliário' 
         img2={jogoVida} name2='Super Jogo da Vida' img3={euSou} name3='Jogo Eu sou?' />
 
-        <Content categoria="op4" section="Jogos de tabuleiro" img1={dama} name1='Jogo de dama' 
+        <Content btnAdd={handleAdd} btnRemove={handleRemove} categoria="op4" section="Jogos de tabuleiro" img1={dama} name1='Jogo de dama' 
         img2={damaLudo} name2='Jogo 2 em 1 Dama e Ludo' img3={damaXadrez} name3='Jogo 2 em 1 Dama e Xadrez' />
     </>
     )
