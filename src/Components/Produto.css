@@ -12,13 +12,21 @@
 .alterar{
     background-color: rgba(2, 217, 255, 0.01);
     font-size: 20px;
+    margin: auto;
 }
 
-#div-button{
+#div-form{
+    margin: auto;
     display: flex;
     justify-content: center; 
+    align-content: center;
+    flex-direction: row;
+    width: 50px;
 }
 
-#p-alt{
-    font-size: 18px;
+.qtd{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 18px 10px 0 10px;
 }
