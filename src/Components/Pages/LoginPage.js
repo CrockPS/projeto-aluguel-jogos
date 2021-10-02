@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './LoginPage.css';
+import Header from '../Header';
 
 export default class LoginPage extends Component{
     render(){
         return(
-            <div>
-                <p>Login</p>
-            </div>
+            <>
+                <Header/>
+            </>
         )
     }
 }

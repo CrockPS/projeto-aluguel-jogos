@@ -7,7 +7,7 @@ const Content = (props) => {
     <div id="div-content">
         <h1 className="section-name"id={props.categoria}>{props.section}</h1>
         <div id="vitrine">
-            <Produto img={props.img1} name={props.name1} value={props.value}
+            <Produto img={props.img1} name={props.name1}
                 btnAdd={props.btnAdd} btnRemove={props.btnRemove} productID={props.productID1}/>
             <Produto img={props.img2} name={props.name2}
                 btnAdd={props.btnAdd} btnRemove={props.btnRemove} productID={props.productID2}/>

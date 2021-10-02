@@ -22,7 +22,7 @@ const Header = (props) => {
             <nav id="menu1">
                 <a href="/" id="logo" className="op"> Ioiô Jogos </a>
                 <input type="text" placeholder="O que você está buscando?"/><button type="button"><BsSearch/></button>
-                <a href="./LoginPage" id="login-link" className="op icon"> <AiOutlineUser/> <p className="icon-text">Faça seu login <br/> ou cadastre-se</p></a>
+                <a href="/" id="login-link" className="op icon"> <AiOutlineUser/> <p className="icon-text">Faça seu login <br/> ou cadastre-se</p></a>
                 <a href="/" id="p" className="op"> <BsBag/> {props.pedidos} </a>
             </nav>
             <nav id="menu2">

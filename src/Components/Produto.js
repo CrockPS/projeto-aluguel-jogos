@@ -12,7 +12,7 @@ const Produto = (props) => {
             <form id="div-form">
                 <p id="p-alt"><button type="button" className="alterar" onClick={props.btnAdd} >
                     <FaPlusSquare/></button></p>
-                    <input value={props.value} id={props.productID} className="qtd"/>
+                    <input id={props.productID} className="qtd"/>
                 <p id="p-alt"><button type="button" className="alterar productID" onClick={props.btnRemove}>
                     <FaMinusSquare/></button></p>
             </form>
