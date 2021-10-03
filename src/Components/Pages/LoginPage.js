@@ -5,7 +5,7 @@ export default class LoginPage extends Component{
     render(){
         return(
             <>
-                <Header/>
+                <Header id="menu2-login"/>
             </>
         )
     }

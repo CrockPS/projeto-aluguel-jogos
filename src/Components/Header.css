@@ -68,6 +68,10 @@ button:hover{
     top: 75px;
 }
 
+#menu2-login{
+    display: none;
+}
+
 #logo{
     width: 300px;
     font-family: 'Patrick Hand', cursive;
